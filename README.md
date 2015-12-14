@@ -29,27 +29,27 @@
   3. MySQL 5.6
 
 2. このリポジトリをクローンし、そのクローンしたディレクトリに入ります。
-```
-$ git clone https://github.com/SpriytusLtd/spirytus.git
-$ cd spirytus
-```
+  ```
+  $ git clone https://github.com/SpriytusLtd/spirytus.git
+  $ cd spirytus
+  ```
 
 3. データベースにアクセスするためのユーザ名とパスワードを環境変数に登録します。
-```
-$ export SPIRYTUS_DATABASE_USERNAME=ユーザ名
-$ export SPIRYTUS_DATABASE_PASSWORD=パスワード
-```
+  ```
+  $ export SPIRYTUS_DATABASE_USERNAME=ユーザ名
+  $ export SPIRYTUS_DATABASE_PASSWORD=パスワード
+  ```
 
 4. データベースを作成し、マイグレートします。
-```
-$ rake db:create
-$ rake db:migrate
-```
+  ```
+  $ rake db:create
+  $ rake db:migrate
+  ```
 
 5. アプリケーションが実行できればたぶんおkです。
-```
-$ rails s
-```
+  ```
+  $ rails s
+  ```
  - CentOSの場合以下の手順が必要です。
  ```
  $ sudo yum install mysql-devel
